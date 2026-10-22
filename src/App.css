@@ -1,0 +1,153 @@
+
+.portafolio {
+ /* En lugar de 100vh, usa auto o flex para ocupar solo el espacio necesario */
+  min-height: auto; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px 40px; 
+ /* Fondo profesional */
+  background: linear-gradient(
+    135deg,
+    #f4f8fc 0%,
+    #e8f0f8 100%
+  );
+  color: var(--text-color);
+}
+body {
+  margin: 0;
+  background-color: #f4f8fc;
+}
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.presentacion {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  
+  /* ESTA ES LA CLAVE PARA INVERTIR EL ORDEN */
+  flex-direction: row-reverse; 
+
+  align-items: center; /* Mantiene la alineación vertical */
+  justify-content: space-between; /* Distribuye el espacio si es necesario */
+  gap: 50px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.texto h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.texto button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.foto img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+ 
+
+}
+.menu {
+ display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px 0;
+
+}
+.menu a {
+  text-decoration: none;
+  color:#333;
+  font-weight: bold;
+ 
+}
+.menu a:hover {
+  color: #007bff;
+}
+/* Contenedor general de la sección de la API */
+.seccion-api {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.seccion-api h3 {
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Tarjeta interna del personaje */
+.card-api {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-api:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-api img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.card-api h4 {
+  font-size: 1.25rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.card-api p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 4px 0;
+}

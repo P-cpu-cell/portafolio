@@ -1,0 +1,93 @@
+/* Contenedor Principal */
+.sobremi {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Título de la Sección */
+.sobremi h1 {
+  font-size: 32px;
+  color: #007bff;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Línea decorativa azul bajo el título */
+.sobremi h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* Estilo para los Párrafos */
+.sobremi p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a5568;
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.05);
+  margin: 0;
+}
+
+/* Botón de Curriculum Vitae */
+.sobremi .btn {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.sobremi .btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.sobremi .btn:active {
+  transform: translateY(0);
+}
+
+/* Adaptación para pantallas pequeñas (Móviles) */
+@media (max-width: 600px) {
+  .sobremi {
+    padding: 20px 15px;
+  }
+
+  .sobremi h1 {
+    font-size: 26px;
+  }
+
+  .sobremi p {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .sobremi .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
