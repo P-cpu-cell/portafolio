@@ -1,7 +1,7 @@
 import React from 'react';
-import './Proyectos.css'; // Asegúrate de crear un archivo CSS para los estilos de la sección de proyectos
+import './Proyectos.css'; 
 function Proyectos() {
-  // Lista de tus proyectos (puedes agregar o modificar los datos fácilmente)
+
   const listaProyectos = [
     {
       id: 1,
@@ -53,7 +53,7 @@ function Proyectos() {
               </div>
               <p>{proyecto.descripcion}</p>
               
-              {/* Etiquetas de tecnologías utilizadas */}
+            
               <div className="tecnologias">
                 {proyecto.tecnologias.map((tech, index) => (
                   <span key={index} className="tech-badge">{tech}</span>
@@ -61,7 +61,7 @@ function Proyectos() {
               </div>
             </div>
 
-            {/* Botones de enlace y código */}
+       
             <div className="tarjeta-acciones">
              
               <a 

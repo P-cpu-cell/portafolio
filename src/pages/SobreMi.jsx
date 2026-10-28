@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './SobreMi.css'; // Asegúrate de crear un archivo CSS para los estilos de la sección "Sobre mí"
+import './SobreMi.css'; 
 
 function SobreMi() {
     return (

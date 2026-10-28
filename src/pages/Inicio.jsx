@@ -84,47 +84,7 @@ function Inicio() {
         </div>
       </section>
 
-      {/* 2. Tarjeta de la API Pública */}
-      <aside className="seccion-api" style={{ flexShrink: 0 }}>
-        <h3 style={{ textAlign: "center", marginBottom: "15px", fontSize: "1rem" }}>
-          Datos desde API Pública
-        </h3>
-
-        {cargando && <p style={{ textAlign: "center" }}>Cargando datos...</p>}
-        {error && <p style={{ color: "red", textAlign: "center" }}>Error: {error}</p>}
-
-        {personaje && (
-          <div 
-            className="card-api" 
-            style={{ 
-              border: "1px solid #e0e0e0", 
-              padding: "16px", 
-              borderRadius: "12px", 
-              width: "240px", 
-              backgroundColor: "#ffffff", 
-              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)" 
-            }}
-          >
-            {/* Imagen obligatoria recibida desde la API */}
-            <img 
-              src={personaje.image} 
-              alt={personaje.name} 
-              style={{ 
-                width: "100%", 
-                borderRadius: "8px", 
-                marginBottom: "12px", 
-                display: "block" 
-              }} 
-            />
-
-            {/* Datos obligatorios */}
-            <h4 style={{ margin: "0 0 10px 0", fontSize: "1.1rem" }}>{personaje.name}</h4>
-            <p style={{ margin: "4px 0", fontSize: "0.9rem" }}><strong>Estado:</strong> {personaje.status}</p>
-            <p style={{ margin: "4px 0", fontSize: "0.9rem" }}><strong>Especie:</strong> {personaje.species}</p>
-            <p style={{ margin: "4px 0", fontSize: "0.9rem" }}><strong>Origen:</strong> {personaje.origin.name}</p>
-          </div>
-        )}
-      </aside>
+    
     </div>
   );
 }
