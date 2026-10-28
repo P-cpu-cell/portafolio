@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Inicio() {
-  const [personaje, setPersonaje] = useState(null);
-  const [cargando, setCargando] = useState(true);
-  const [error, setError] = useState(null);
+export default function Inicio() {
+  const [climaData, setClimaData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [mensajeError, setMensajeError] = useState(null);
 
   useEffect(() => {
-    const idAleatorio = Math.floor(Math.random() * 826) + 1;
-
-    fetch(`https://rickandmortyapi.com/api/character/${idAleatorio}`)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Error al obtener datos de la API");
+    // API gratuita de Open-Meteo para Tartagal, Salta (Latitud y Longitud, sin necesidad de Key)
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=-22.5167&current_weather=true&longitude=-63.8")
+      .then((respuesta) => {
+        if (!respuesta.ok) {
+          throw new Error("Error al obtener datos del clima");
         }
-        return res.json();
+        return respuesta.json();
       })
-      .then((data) => {
-        setPersonaje(data);
-        setCargando(false);
+      .then((resultado) => {
+        setClimaData(resultado.current_weather);
+        setIsLoading(false);
       })
       .catch((err) => {
-        setError(err.message);
-        setCargando(false);
+        setMensajeError(err.message);
+        setIsLoading(false);
       });
   }, []);
 
@@ -40,7 +39,6 @@ function Inicio() {
         margin: "0 auto" 
       }}
     >
-      {/* 1. Sección de Presentación Personal */}
       <section 
         className="presentacion" 
         style={{ 
@@ -84,9 +82,36 @@ function Inicio() {
         </div>
       </section>
 
-    
+      <aside className="seccion-api" style={{ flexShrink: 0 }}>
+        <h3 style={{ textAlign: "center", marginBottom: "15px", fontSize: "1rem" }}>
+          Clima Actual en la Zona
+        </h3>
+
+        {isLoading && <p style={{ textAlign: "center" }}>Cargando clima...</p>}
+        {mensajeError && <p style={{ color: "red", textAlign: "center" }}>Error: {mensajeError}</p>}
+
+        {climaData && (
+          <div 
+            className="card-api" 
+            style={{ 
+              border: "1px solid #e0e0e0", 
+              padding: "20px", 
+              borderRadius: "12px", 
+              width: "240px", 
+              backgroundColor: "#ffffff", 
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+              textAlign: "center"
+            }}
+          >
+            <h4 style={{ margin: "0 0 10px 0", fontSize: "1.1rem" }}>Tartagal, Salta</h4>
+            <p style={{ margin: "8px 0", fontSize: "1.8rem", fontWeight: "bold", color: "#007bff" }}>
+              {climaData.temperature}°C
+            </p>
+            <p style={{ margin: "4px 0", fontSize: "0.9rem" }}><strong>Viento:</strong> {climaData.windspeed} km/h</p>
+            <p style={{ margin: "4px 0", fontSize: "0.9rem" }}><strong>Estado:</strong> En línea</p>
+          </div>
+        )}
+      </aside>
     </div>
   );
 }
-
-export default Inicio;
