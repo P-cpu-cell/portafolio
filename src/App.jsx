@@ -12,7 +12,7 @@ import Contacto from "./pages/Contacto";
 function App() {
   return (
     <main className="portafolio">
-      <BrowserRouter >
+   <BrowserRouter basename="/portafolio">
         {/* Navegación global */}
         <Menu />
 
