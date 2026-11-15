@@ -8,8 +8,6 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
-import Resumen from "./pages/Resumen";
-import camara from "./pages/camara";
 
 
 function App() {
