@@ -8,11 +8,13 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
+import ejemplo1 from "./pages/ejemplo1";
+
 
 function App() {
   return (
     <main className="portafolio">
-      <BrowserRouter>
+   <BrowserRouter basename="/portafolio">
         {/* Navegación global */}
         <Menu />
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/Proyectos" element={<Proyectos />} />
           <Route path="/SobreMi" element={<SobreMi />} />
           <Route path="/Contacto" element={<Contacto />} />
+     
+          <Route path="/ejemplo1" element={<ejemplo1 />} />
         </Routes>
       </BrowserRouter>
     </main>

@@ -52,7 +52,7 @@ export default function Inicio() {
       >
         <div className="foto" style={{ flexShrink: 0 }}>
           <img 
-            src="/logo.jpg" 
+            src="./logo.JPG" 
             alt="María Daniela Perez" 
             style={{ 
               width: "220px", 
