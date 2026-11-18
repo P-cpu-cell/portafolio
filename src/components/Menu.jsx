@@ -9,6 +9,7 @@ function Menu() {
         <Link to="/SobreMi">SobreMi</Link>
         <Link to="/Proyectos">Proyectos</Link>
         <Link to="/Contacto">Contacto</Link>
+        <Link to="/ejemplo1">ejemplo1</Link>
       </nav>
     </main>
   );
