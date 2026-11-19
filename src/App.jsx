@@ -8,7 +8,7 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
-import ejemplo1 from "./pages/ejemplo1";
+import Ejemplo1 from "./pages/ejemplo1";
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="/SobreMi" element={<SobreMi />} />
           <Route path="/Contacto" element={<Contacto />} />
      
-          <Route path="/ejemplo1" element={<ejemplo1 />} />
+          <Route path="/ejemplo1" element={<Ejemplo1 />} />
         </Routes>
       </BrowserRouter>
     </main>
