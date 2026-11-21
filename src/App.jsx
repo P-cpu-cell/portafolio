@@ -8,8 +8,7 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
-import Ejemplo1 from "./pages/ejemplo1";
-import Ejemplo2 from "./pages/Ejemplo2";
+import oso from "./pages/oso";
 
 
 function App() {
@@ -26,9 +25,9 @@ function App() {
           <Route path="/Proyectos" element={<Proyectos />} />
           <Route path="/SobreMi" element={<SobreMi />} />
           <Route path="/Contacto" element={<Contacto />} />
-     
-          <Route path="/ejemplo1" element={<Ejemplo1 />} />
-          <Route path="/ejemplo2" element={<Ejemplo2 />} />
+          <Route path="/oso" element={<oso />} />
+          
+          
           
         </Routes>
       </BrowserRouter>
