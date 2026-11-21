@@ -9,7 +9,7 @@ import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
 import Ejemplo1 from "./pages/ejemplo1";
-import Ejemplo2 from ".pages/ejemplo2";
+
 
 
 function App() {
