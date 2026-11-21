@@ -9,7 +9,7 @@ import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
 import Ejemplo1 from "./pages/ejemplo1";
-
+import Ejemplo2 from "./pages/Ejemplo2";
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Route path="/Contacto" element={<Contacto />} />
      
           <Route path="/ejemplo1" element={<Ejemplo1 />} />
+          <Route path="/ejemplo2" element={<Ejemplo2 />} />
           
         </Routes>
       </BrowserRouter>
