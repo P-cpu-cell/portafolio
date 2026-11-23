@@ -1,8 +1,9 @@
 import React from 'react';
 import './Proyectos.css'; 
 function Proyectos() {
-
+/*
   const listaProyectos = [
+    
     {
       id: 1,
       titulo: 'Taller de Motos',
@@ -77,7 +78,7 @@ function Proyectos() {
         ))}
       </div>
     </section>
-  );
+  );*/
 }
 
 export default Proyectos;

@@ -3,6 +3,7 @@ import React from 'react';
 import './SobreMi.css'; 
 
 function SobreMi() {
+    /*
     return (
     <div className="Sobremi">
         <h1>Sobre mí</h1>
@@ -43,9 +44,9 @@ function SobreMi() {
         CURRICULUM VITAE
       </a>
     </div>
-    );
+    ); */
 }
-   
+  
 
         
 
