@@ -1,4 +1,4 @@
-/*
+
 import React from 'react';
 import './SobreMi.css'; 
 
@@ -50,4 +50,3 @@ function SobreMi() {
         
 
 export default SobreMi;
-*/
