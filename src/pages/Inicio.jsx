@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+/*
 export default function Inicio() {
   const [climaData, setClimaData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -115,3 +115,4 @@ export default function Inicio() {
     </div>
   );
 }
+ */
