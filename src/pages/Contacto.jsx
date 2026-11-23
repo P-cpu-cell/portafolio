@@ -150,6 +150,7 @@ function Contacto() {
 
         <button type="submit" className="btn">Enviar Formulario</button>
       </form>
+      <button onClick={() => alert('Bienvenida a mi portfolio')}>Bienvenida</button>
     </div>
   );
 }
