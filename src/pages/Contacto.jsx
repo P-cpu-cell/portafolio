@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 function Contacto() {
   // Estado para gestionar los datos del formulario
-  const [formData, setFormData] = useState({
+  /*const [formData, setFormData] = useState({
     nombre: '',
     email: '',
     motivo: 'consulta',
@@ -21,10 +21,10 @@ function Contacto() {
       ...formData,
       [name]: type === 'checkbox' ? checked : value
     });
-  };
+  };*/
 
   // Manejador del envío del formulario
-  const handleSubmit = (e) => {
+  /*const handleSubmit = (e) => {
     e.preventDefault();
 
     // Integración de tus credenciales reales de EmailJS
@@ -46,8 +46,10 @@ function Contacto() {
         alert('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
       });
   };
+*/
 
   return (
+  
     <div className="contacto-container">
       <h1>Contacto</h1>
       
@@ -153,6 +155,6 @@ function Contacto() {
       <button onClick={() => alert('Bienvenida a mi portfolio')}>Bienvenida</button>
     </div>
   );
+  
 }
-
 export default Contacto;
