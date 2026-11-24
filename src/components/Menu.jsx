@@ -9,8 +9,7 @@ function Menu() {
         <Link to="/SobreMi">SobreMi</Link>
         <Link to="/Proyectos">Proyectos</Link>
         <Link to="/Contacto">Contacto</Link>
-        <Link to="/oso">oso</Link>
-        <Link to="/Ejemplo3">Ejemplo3</Link>
+        
 
       </nav>
     </main>
