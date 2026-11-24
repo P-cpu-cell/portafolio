@@ -8,7 +8,7 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
-
+import Ejemplo4 from "./pages/Ejemplo4";      
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
           <Route path="/Proyectos" element={<Proyectos />} />
           <Route path="/SobreMi" element={<SobreMi />} />
           <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/Ejemplo4" element={<Ejemplo4 />} />   
           
           
           
