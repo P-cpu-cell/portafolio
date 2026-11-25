@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #050522, #151052, #080b32);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 420px;
+    padding: 35px;
+    border: 1px solid #00d9ff;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 25px #00bfff;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.botones button {
+    width: 50%;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    background: #29205c;
+    cursor: pointer;
+}
+
+.formulario input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #5555aa;
+    background: #101637;
+    color: white;
+}
+
+.password {
+    position: relative;
+}
+
+.password button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    color: #00eaff;
+    cursor: pointer;
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0;
+}
+
+.principal {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #a020f0, #00d9ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario a {
+    color: #00eaff;
+    margin-left: 5px;
+}
+
+@media(max-width: 480px) {
+    .formulario {
+        padding: 22px;
+    }
+}
