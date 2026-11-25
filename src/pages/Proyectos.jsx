@@ -1,12 +1,13 @@
 import React from 'react';
 import './Proyectos.css'; 
 function Proyectos() {
-
+/*
   const listaProyectos = [
+    
     {
       id: 1,
       titulo: 'Taller de Motos',
-      image:"/tallermoto.png",
+      image:"./tallermoto.png",
       descripcion: 'Sistema de gestion que administra y registra los servicio  de un Taller de Motos, permitiendo un control eficiente de clientes, vehículos y servicios realizados.',
       tecnologias: ['C#(utilizando el entorno .NET Framework / Windows Forms)'],
       linkCodigo: 'https://github.com/P-cpu-cell/Taller_de_Moto'
@@ -14,7 +15,7 @@ function Proyectos() {
     {
       id: 2,
       titulo: 'GALERIA Profecional :" Recuerdos para ti"',
-      image:"/galeria.png",
+      image:"./galeria.png",
       descripcion: 'El proyecto consiste en un sistema de galería visual que despliega un catálogo organizado de imágenes centradas en temáticas como naturaleza, paisajes y comida. La aplicación permite visualizar las fotografías junto con información clave y descripciones breves, ofreciendo una navegación intuitiva para explorar el contenido multimedia.',
       tecnologias: ['WordPress', 'HTML', 'CSS', 'JavaScript'],
 
@@ -23,7 +24,7 @@ function Proyectos() {
     {
       id: 3,
       titulo: 'El sitio web  Astroletra Escuela de Escritura',
-      image: "/escuela.png",
+      image: "./escuela.png",
       descripcion: 'Es una plataforma web e interactiva orientada al ámbito educativo y creativo de la escritura.Su objetivo es Ofrecer un espacio formativo enfocado en técnicas de escritura, cursos, recursos literarios y orientación académica o artística.',
       tecnologias: ['HTML5', 'CSS3', 'JavaScript'],
     
@@ -32,7 +33,7 @@ function Proyectos() {
     {
       id: 4,
       titulo: 'Sistema de Gestión  para una Sala de belleza',
-      image: "/estetica.png",
+      image: "./estetica.png",
       descripcion: 'Sistema de gestión para la administración de servicios y clientes en una sala de belleza, permitiendo un control eficiente de citas, productos y servicios.',
       tecnologias: ['C#', 'Sqlite', 'Windows Forms'],
       linkCodigo:'https://github.com/P-cpu-cell/Sistema-de-Gesti-n-para-una-Sala-de-belleza'  
@@ -77,7 +78,7 @@ function Proyectos() {
         ))}
       </div>
     </section>
-  );
+  );*/
 }
 
 export default Proyectos;

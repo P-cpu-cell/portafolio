@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Inicio() {
-  const [climaData, setClimaData] = useState(null);
+ /* const [climaData, setClimaData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [mensajeError, setMensajeError] = useState(null);
 
@@ -52,7 +52,7 @@ export default function Inicio() {
       >
         <div className="foto" style={{ flexShrink: 0 }}>
           <img 
-            src="/logo.jpg" 
+            src="./logo.JPG" 
             alt="María Daniela Perez" 
             style={{ 
               width: "220px", 
@@ -113,5 +113,5 @@ export default function Inicio() {
         )}
       </aside>
     </div>
-  );
+  );*/
 }

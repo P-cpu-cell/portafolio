@@ -47,7 +47,9 @@ function Contacto() {
       });
   };
 
+
   return (
+  
     <div className="contacto-container">
       <h1>Contacto</h1>
       
@@ -150,8 +152,10 @@ function Contacto() {
 
         <button type="submit" className="btn">Enviar Formulario</button>
       </form>
+      <button onClick={() => alert('Bienvenida a mi portfolio')}>Bienvenida</button>
     </div>
+    
   );
+  
 }
-
 export default Contacto;
