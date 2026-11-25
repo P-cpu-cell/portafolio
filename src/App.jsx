@@ -8,7 +8,7 @@ import Inicio from "./pages/Inicio";
 import Proyectos from "./pages/Proyectos";
 import SobreMi from "./pages/SobreMi";
 import Contacto from "./pages/Contacto";
-import eje1 from "./pages/Ejercicio1";    
+import Ejercicio1 from "./pages/Ejercicio1";    
    
 
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/Proyectos" element={<Proyectos />} />
           <Route path="/SobreMi" element={<SobreMi />} />
           <Route path="/Contacto" element={<Contacto />} />
-          <Route path="/eje1" element={<Ejercicio1 />} />
+          <Route path="/Ejercicio1" element={<Ejercicio1 />} />
           
           
           
