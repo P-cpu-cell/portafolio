@@ -55,6 +55,9 @@ function Ejercicio1() {
         <div className="contenedor">
 
             <div className="formulario">
+                 <div className="logo">
+        <img src="/logo.png" alt="Logo de usuario" />
+    </div>
 
                 <div className="botones">
 
